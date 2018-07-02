@@ -1,0 +1,6 @@
+.travis.yml
+docs/
+.npmignore
+
+// npm pack
+kkiapay-*.tgz

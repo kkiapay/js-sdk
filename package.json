@@ -1,0 +1,29 @@
+{
+  "name": "kkiapay",
+  "version": "0.0.1",
+  "description": "Javascript Sdk for KKIAPAY (www.kkipay.me) API",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"i will add ASAP\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkiapay/js-sdk.git"
+  },
+  "keywords": [
+    "kkiapay"
+  ],
+  "author": "Shadai ALI <shadai.ali@opensi.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkiapay/js-sdk/issues"
+  },
+  "homepage": "https://github.com/kkiapay/js-sdk#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "socket.io-client": "^2.1.1"
+  }
+}
