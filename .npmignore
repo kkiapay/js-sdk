@@ -1,6 +1,16 @@
 .travis.yml
 docs/
 .npmignore
-
-// npm pack
+**/.*
+*.iml
+coverage/
+sample/
+node_modules/
+typings/
+sandbox/
+test/
+Gruntfile.js
+karma.conf.js
+webpack.*.js
 kkiapay-*.tgz
+test.html
