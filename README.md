@@ -26,3 +26,51 @@ Using cdn:
 ```html
 <script src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
 ```
+
+## Example
+
+## MTN Mobile Money 
+
+Performing a `Debit` request 
+
+```js
+// setup your api key (find one at https://www.kkipay.me)
+const k = kkiapay("4tvIQTwBjnbVKFnP4bR8DaNlGXXwDt")
+
+//request 100 XOF from 67 43 42 70, mobile money account
+k.debit("22967434270",100).then((res) => {
+    // handle response
+}).catch((err) => {
+    //handle error
+})
+```
+
+## Reference
+
+### Response
+Server respond in 3 cases : 
+  - user completes payment with success ( then block  ) 
+  - user payment refuses payment ( catch block)
+  - user cancel payment  ( catch block )
+  - timeout - 90s  (catch block )
+  - system error ( catch block )
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>failureCode</td>
+      <td>((string))</td>
+      <td>The status of requested payment                                                               <li> <code>processing_error</code>  System is busy or user already has a pending payment request</li> <li><code>insufficent_fund</code> User account balance is less than requested amount</li>
+      </td> 
+   </tr>
+  </tbody>
+</table>
+
+Response object
