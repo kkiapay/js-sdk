@@ -35,7 +35,7 @@ Performing a `Debit` request
 
 ```js
 // setup your api key (find one at https://www.kkipay.me)
-const k = kkiapay("4tvIQTwBjnbVKFnP4bR8DaNlGXXwDt")
+const k = kkiapay("<your-api-key>")
 
 //request 100 XOF from 67 43 42 70, mobile money account
 k.debit("22967434270",100).then((res) => {
