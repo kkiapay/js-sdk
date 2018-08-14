@@ -47,23 +47,6 @@ k.debit("22967434270",100).then((res) => {
 
 ## Reference
 
- <table>
-    <thead>
-      <tr>
-        <th>Function</th>
-        <th>Attributes</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-      .debit()
-    </tr>
-      <tr> 
-        <tr><td>phone</td>amount<td>firstname</td><td>lastname</td><td>email</td></tr>
-        <tr><td>phone</td>amount<td>firstname</td><td>lastname</td><td>email</td></tr>
-      </tr>
-    </tbody>
-  </table>
 
 ### Response
 Server responds in 3 cases : 
