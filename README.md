@@ -47,11 +47,29 @@ k.debit("22967434270",100).then((res) => {
 
 ## Reference
 
+ <table>
+    <thead>
+      <tr>
+        <th>Function</th>
+        <th>Attributes</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      .debit()
+    </tr>
+      <tr> 
+        <tr><td>phone</td>amount<td>firstname</td><td>lastname</td><td>email</td></tr>
+        <tr><td>phone</td>amount<td>firstname</td><td>lastname</td><td>email</td></tr>
+      </tr>
+    </tbody>
+  </table>
+
 ### Response
-Server respond in 3 cases : 
+Server responds in 3 cases : 
   - user completes payment with success ( then block  ) 
-  - user payment refuses payment ( catch block)
-  - user cancel payment  ( catch block )
+  - user rejected the approval request ( catch block)
+  - user cancels the request for approval ( catch block )
   - timeout - 90s  (catch block )
   - system error ( catch block )
 
@@ -60,6 +78,7 @@ Server respond in 3 cases :
     <tr>
       <th>Attribute</th>
       <th>Type</th>
+      <th>When</th>
       <th>Details</th>
     </tr>
   </thead>
@@ -67,7 +86,32 @@ Server respond in 3 cases :
     <tr>
       <td>failureCode</td>
       <td>((string))</td>
+         <td> <code>Failed</code> </td>
       <td>The status of requested payment                                                               <li> <code>processing_error</code>  System is busy or user already has a pending payment request</li> <li><code>insufficent_fund</code> User account balance is less than requested amount</li>
+      </td> 
+   </tr>
+   <tr>
+      <td>failureMessage</td>
+      <td>((string))</td>
+               <td> <code>Failed</code> </td>
+
+      <td>Description of error
+      </td> 
+   </tr>
+   <tr>
+      <td>account</td>
+      <td>((string))</td>
+               <td> <code>Failed / Success</code> </td>
+
+      <td>User phone number
+      </td> 
+   </tr>
+   <tr>
+      <td>transactionId</td>
+      <td>((string))</td>
+                     <td> <code>Failed / Success</code> </td>
+
+      <td>Unique Transaction identifier
       </td> 
    </tr>
   </tbody>
