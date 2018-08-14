@@ -84,7 +84,7 @@ Server responds in 3 cases :
    <tr>
       <td>account</td>
       <td>((string))</td>
-               <td> <code>Failed / Success</code> </td>
+               <td> <code>Failed</code> / <code>Success</code> </td>
 
       <td>User phone number
       </td> 
@@ -92,7 +92,7 @@ Server responds in 3 cases :
    <tr>
       <td>transactionId</td>
       <td>((string))</td>
-                     <td> <code>Failed / Success</code> </td>
+                     <td> <code>Failed</code> / <code>Success</code> </td>
 
       <td>Unique Transaction identifier
       </td> 
