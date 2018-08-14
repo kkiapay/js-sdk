@@ -89,9 +89,8 @@ Server responds in 3 cases :
       <td>transactionId</td>
       <td>((string))</td>
        <td> <code>Failed</code> / <code>Success</code> </td>
-       <td>Unique Transaction identifier </td> 
+       <td>Unique Transaction's identifier </td> 
    </tr>
   </tbody>
 </table>
 
-Response object
