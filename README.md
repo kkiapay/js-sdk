@@ -76,25 +76,22 @@ Server responds in 3 cases :
    <tr>
       <td>failureMessage</td>
       <td>((string))</td>
-               <td> <code>Failed</code> </td>
-
+       <td> <code>Failed</code> </td>
       <td>Description of error</td> 
    </tr>
    <tr>
       <td>account</td>
       <td>((string))</td>
-               <td> <code>Failed</code> / <code>Success</code> </td>
-
+       <td> <code>Failed</code> / <code>Success</code> </td>
       <td>User phone number</td> 
-      <td></td>
+      <td>...</td>
    </tr>
    <tr>
       <td>transactionId</td>
       <td>((string))</td>
-                     <td> <code>Failed</code> / <code>Success</code> </td>
-
-      <td>Unique Transaction identifier </td> 
-      <td></td>
+       <td> <code>Failed</code> / <code>Success</code> </td>
+       <td>Unique Transaction identifier </td> 
+      <td> ... </td>
    </tr>
   </tbody>
 </table>
