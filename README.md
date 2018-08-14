@@ -84,14 +84,12 @@ Server responds in 3 cases :
       <td>((string))</td>
        <td> <code>Failed</code> / <code>Success</code> </td>
       <td>User phone number</td> 
-      <td>...</td>
    </tr>
    <tr>
       <td>transactionId</td>
       <td>((string))</td>
        <td> <code>Failed</code> / <code>Success</code> </td>
        <td>Unique Transaction identifier </td> 
-      <td> ... </td>
    </tr>
   </tbody>
 </table>
