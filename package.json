@@ -1,6 +1,6 @@
 {
   "name": "kkiapay",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Javascript Sdk for KKIAPAY (www.kkipay.me) API",
   "main": "index.js",
   "directories": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"i will add ASAP\" && exit 0",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
