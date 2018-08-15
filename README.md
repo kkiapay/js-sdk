@@ -46,7 +46,16 @@ k.debit("22967434270",100).then((res) => {
 ```
 
 ## Reference
-
+### Methods 
+ *.debit()*  		Details
+<table>
+<tr><td>Argument</td><td>Type</td><td>Required</td><td>Details</td></tr>
+<tr><td>phone</td><td>String</td><td>Yes</td><td>Valid mobile money number to debit. ex : 22967434270 </td></tr>
+<tr><td>amount</td><td>Numeric</td><td>Yes</td><td>Amount to debit from user account (XOF) </td></tr>
+<tr><td>firstname</td><td>String</td><td>No</td><td>Client firstname </td></tr>
+<tr><td>lastname</td><td>String</td><td>No</td><td>Client lastname </td></tr>
+<tr><td>email</td><td>String</td><td>No</td><td>Client email address </td></tr>
+</table>
 
 ### Response
 Server responds in 3 cases : 
