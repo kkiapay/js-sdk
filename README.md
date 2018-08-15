@@ -34,7 +34,7 @@ Using cdn:
 Performing a `Debit` request 
 
 ```js
-// setup your api key (find one at https://www.kkipay.me)
+// setup your api key (find one at https://www.kkiapay.me)
 const k = kkiapay("<your-api-key>")
 
 //request 100 XOF from 67 43 42 70, mobile money account
