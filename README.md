@@ -29,7 +29,7 @@ Using cdn:
 
 ## Example
 
-## MTN Mobile Money 
+## Mobile Money 
 
 Performing a `Debit` request 
 
