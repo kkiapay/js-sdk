@@ -1,6 +1,6 @@
-const kkiapay = require('../index')({
-    apikey: process.env.API_KEY
-})
+const kkiapay = require('../index')(
+    process.env.API_KEY
+)
 
 kkiapay.debit("22967434270", 100)
     .then((res) => {
