@@ -1,6 +1,6 @@
 {
   "name": "kkiapay",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Javascript Sdk for KKIAPAY (www.kkipay.me) API",
   "main": "index.js",
   "directories": {
