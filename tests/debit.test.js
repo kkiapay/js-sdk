@@ -1,8 +1,6 @@
 require ("babel-polyfill");
 const { request,getSocketChannel } = require('../lib/functions');
-// const kkiapay = require('../index')(
-//     "42051160403a11e98f723752f967fed2"
-// )
+
 const changeStatus = require('./mock/http')
 
 
