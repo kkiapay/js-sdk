@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"i will add ASAP\" && exit 0",
+    "test": "jest",
     "build": "webpack --config webpack.config.js",
     "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags"
   },
@@ -26,6 +26,8 @@
   "homepage": "https://github.com/kkiapay/js-sdk#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^24.5.0",
     "socket.io-client": "^2.1.1"
   },
   "devDependencies": {
