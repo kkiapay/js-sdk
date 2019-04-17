@@ -1,6 +1,6 @@
 {
   "name": "kkiapay",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Javascript Sdk for KKIAPAY (www.kkipay.me) API",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.config.js",
-    "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags"
+    "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -30,10 +30,10 @@
     "socket.io-client": "^2.1.1"
   },
   "devDependencies": {
+    "jest": "^24.5.0",
     "lodash": "^4.17.11",
+    "terser-webpack-plugin": "^1.2.3",
     "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8",
-    "uglifyjs-webpack-plugin": "^2.1.2",
-    "jest": "^24.5.0"
+    "webpack-cli": "^3.0.8"
   }
 }

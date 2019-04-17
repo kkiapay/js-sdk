@@ -1,5 +1,7 @@
 var path = require('path');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+
 
 module.exports = {
     mode: 'production',
@@ -7,11 +9,11 @@ module.exports = {
     entry: {
         "app": "./index.js"
     },
-    plugins: [
-        new UglifyJSPlugin({}, {
+    optimization: {
+        minimizer: [new TerserPlugin({
             sourceMap: true
-        })
-    ],
+        })],
+      },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'kkiapay.bundle.js',
