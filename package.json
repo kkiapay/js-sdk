@@ -27,13 +27,13 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
-    "jest": "^24.5.0",
-    "socket.io-client": "^2.1.1",
-    "uglifyjs-webpack-plugin": "^2.1.2"
+    "socket.io-client": "^2.1.1"
   },
   "devDependencies": {
     "lodash": "^4.17.11",
     "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "jest": "^24.5.0"
   }
 }
