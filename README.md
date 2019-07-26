@@ -27,8 +27,6 @@ Using cdn:
 <script src="https://unpkg.com/kkiapay/dist/kkiapay.bundle.js"></script>
 ```
 
-## Example
-
 ## Initialization
 
 #### Production
