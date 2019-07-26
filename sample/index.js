@@ -1,9 +1,8 @@
 const kkiapay = require('../index')(
-    "7b1133f07cc411e99c4c5372e18c065c",{ Test:true }
+    "XXXXXXXXXXXXX",{ Test:true }
 )
 
 
-22997000000
 
 kkiapay.debitRequest("22997000000",1,"JOHN","DOE")
 .then((response)=>{
