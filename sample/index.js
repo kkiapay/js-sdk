@@ -1,5 +1,5 @@
 const kkiapay = require('../index')(
-    "XXXXXXXXXXXXX",{ Test:true }
+    "XXXXXXXXXXXXX",{ sandbox:true }
 )
 
 

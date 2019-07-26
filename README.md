@@ -29,13 +29,26 @@ Using cdn:
 
 ## Example
 
+## Initialization
+
+#### Production
+```js
+// setup your api key (https://www.kkiapay.me)
+//initialize kkiapay in production environnment
+const k = kkiapay("<your-api-key>")
+```
+
+#### Sandbox
+```js
+//initialize kkiapay in sandbox environnment
+const k = kkiapay("<your-api-key>",{sandbox:true})
+```
+
 ## Mobile Money 
 
 Performing a `Debit` request 
 
 ```js
-// setup your api key (find one at https://www.kkiapay.me)
-const k = kkiapay("<your-api-key>")
 
 //request 100 XOF from 67 43 42 70, mobile money account
 k.debit("22967434270",100).then((res) => {
