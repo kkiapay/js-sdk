@@ -4,10 +4,6 @@ const { http } = require('../../lib/functions');
 
 
 
-// http.defaults.headers.common['x-api-key']="42051160403a11e98f723752f967fed2"
-
-
-
 let sucess = true
 
 http.interceptors.request.use((config) => {
