@@ -4,10 +4,6 @@ const { http } = require('../../lib/functions');
 
 
 
-// http.defaults.headers.common['x-api-key']="42051160403a11e98f723752f967fed2"
-
-
-
 let sucess = true
 
 http.interceptors.request.use((config) => {
@@ -17,7 +13,6 @@ http.interceptors.request.use((config) => {
 })
 
 http.interceptors.response.use((response) =>{
-    console.log(response)
 } , (error) => {
     return sucess ? Promise.resolve({data:"channel909877"}): Promise.reject({response:{status:401} })
 })
