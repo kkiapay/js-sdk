@@ -13,7 +13,6 @@ http.interceptors.request.use((config) => {
 })
 
 http.interceptors.response.use((response) =>{
-    console.log(response)
 } , (error) => {
     return sucess ? Promise.resolve({data:"channel909877"}): Promise.reject({response:{status:401} })
 })

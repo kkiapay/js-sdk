@@ -1,11 +1,16 @@
 require ("babel-polyfill");
 const { request,getSocketChannel } = require('../lib/functions');
+const kkiapay = require('../index')
+
+
 
 const changeStatus = require('./mock/http')
 
 
 describe("verify channel",()=>{
 
+    kkiapay("xxxxxxx");
+    
     test('checks if the function returns a string', async () => {
         changeStatus(true)
         const data = await getSocketChannel();
@@ -22,7 +27,6 @@ describe("verify channel",()=>{
         changeStatus(false)
         const data = await request("22967298275","1","rr22","john","doe");
         expect(data.response.status).toEqual(401)
-        // console.log(data.response.status)
     });
 
 })
