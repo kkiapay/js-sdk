@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.config.js",
-    "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git add . && git commit -m 'v$PACKAGE_VERSION' && git tag v$PACKAGE_VERSION && git push --tags"
+    "deploy": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git add . && git commit -m v$PACKAGE_VERSION && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
