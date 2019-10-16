@@ -10,8 +10,8 @@ Javascript Sdk for KKIAPAY (https://kkiapay.me) API
 - [x] MTN Mobile Money Debit & Transfer Request
 - [x] Flooz Mobile Money Debit Request
 - [ ] Ecobank Express Cash
-- [ ] Visa card payments
-- [ ] Master card payments
+- [x] Visa card payments
+- [x] Master card payments
 
 ## Installing
 
