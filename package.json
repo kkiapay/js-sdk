@@ -2,7 +2,7 @@
   "name": "kkiapay",
   "version": "1.0.4",
   "description": "Javascript Sdk for KKIAPAY (www.kkipay.me) API",
-  "main": "index.js",
+  "main":"dist/kkiapay.bundle.js",
   "directories": {
     "lib": "lib"
   },
