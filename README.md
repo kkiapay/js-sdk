@@ -66,6 +66,7 @@ k.debit("22967434270",100).then((res) => {
 <tr><td>firstname</td><td>String</td><td>No</td><td>Client firstname </td></tr>
 <tr><td>lastname</td><td>String</td><td>No</td><td>Client lastname </td></tr>
 <tr><td>email</td><td>String</td><td>No</td><td>Client email address </td></tr>
+<tr><td>callback</td><td>String</td><td>No</td><td> In case of successful payment the payment information is sent by POST on this link </td></tr>
 </table>
 
 ### Response
